@@ -13,5 +13,13 @@ public class Pipe : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.left * Time.deltaTime * speed;
+
+        if (transform.position.x <-2.5f)
+        {
+
+            // AUTODESTRUIR
+
+            Destroy(gameObject);
+        }
     }
 }
